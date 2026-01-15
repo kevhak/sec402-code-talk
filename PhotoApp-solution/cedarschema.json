@@ -1,0 +1,53 @@
+{
+  "PhotoApp": {
+    "entityTypes": {
+      "Album": {},
+      "Application": {},
+      "Photo": {
+        "memberOfTypes": ["Application", "Album"],
+        "shape": {
+          "type": "Record",
+          "attributes": {
+            "labels": {
+              "type": "Set",
+              "element": { "type": "EntityOrCommon", "name": "String" }
+            },
+            "owner": { "type": "EntityOrCommon", "name": "User" },
+            "subjects": {
+              "type": "Set",
+              "element": { "type": "EntityOrCommon", "name": "User" },
+              "required": false
+            }
+          }
+        }
+      },
+      "Role": {},
+      "User": { "memberOfTypes": ["UserGroup", "Role"] },
+      "UserGroup": {}
+    },
+    "actions": {
+      "deletePhoto": {
+        "appliesTo": { "resourceTypes": ["Photo"], "principalTypes": ["User"] }
+      },
+      "editPhoto": {
+        "appliesTo": { "resourceTypes": ["Photo"], "principalTypes": ["User"] }
+      },
+      "viewPhoto": {
+        "appliesTo": {
+          "resourceTypes": ["Photo"],
+          "principalTypes": ["User"],
+          "context": {
+            "type": "Record",
+            "attributes": {
+              "judgingSession": {
+                "type": "EntityOrCommon",
+                "name": "Bool",
+                "required": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

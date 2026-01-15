@@ -1,0 +1,30 @@
+{
+  "name": "sec402",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx vitest"
+  },
+  "keywords": [
+    "Cedar"
+  ],
+  "author": "kevhak@amazon.com",
+  "license": "MIT-0",
+  "description": "SEC402 | Code talk | Designing complex authorization systems with Cedar",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.24.0",
+    "@types/node": "^20.17.50",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  },
+  "dependencies": {
+    "@cedar-policy/cedar-wasm": "=4.4.0"
+  }
+}
