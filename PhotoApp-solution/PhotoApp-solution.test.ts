@@ -9,6 +9,7 @@ import {
 } from '@cedar-policy/cedar-wasm';
 
 import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { expect, test, beforeAll, suite } from 'vitest';
 import { getCedarStuff } from '../cedar-util';
 
@@ -19,7 +20,9 @@ suite('Cedar WASM', async () => {
 });
 
 // schema, policies, entities
-const PHOTOAPP_PATH = path.resolve(__dirname);
+const PHOTOAPP_PATH = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+);
 const { schema, policies, entities } = getCedarStuff(PHOTOAPP_PATH);
 
 suite('Cedar validation', () => {
