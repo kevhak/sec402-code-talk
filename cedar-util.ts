@@ -17,7 +17,7 @@ type TemplateLinkJson = {
   args: Record<string, string>;
 };
 
-const parseEntityUid = (uid: string) => {
+const parseEntityUid = (uid: string): { type: string; id: string } => {
   const match = uid.match(/^(.+)::"(.+)"$/);
   return { type: match![1], id: match![2] };
 };
@@ -47,7 +47,10 @@ const getCedarPolicies = (cedarPath: string): PolicySet => {
         templateId: link.template_id,
         newId: link.link_id,
         values: Object.fromEntries(
-          Object.entries(link.args).map(([k, v]) => [k, parseEntityUid(v as string)])
+          Object.entries(link.args).map(([k, v]) => [
+            k,
+            parseEntityUid(v as string),
+          ]),
         ),
       }));
       templateLinks.push(...links);

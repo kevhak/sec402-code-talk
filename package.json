@@ -1,8 +1,9 @@
 {
   "name": "sec402",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
-    "test": "npx vitest"
+    "test": "npx vitest",
+    "clitest": "cd PhotoApp-solution && TMP_FILE=$(mktemp) && cat *.cedar > \"$TMP_FILE\" && cedar run-tests --schema cedarschema --policies \"$TMP_FILE\" -k cedartemplatelinks.json --tests cedartests.json && rm \"$TMP_FILE\""
   },
   "keywords": [
     "Cedar"
@@ -25,6 +26,10 @@
     "vitest": "^3.1.4"
   },
   "dependencies": {
-    "@cedar-policy/cedar-wasm": "=4.4.0"
+    "@cedar-policy/cedar-wasm": "=4.13.0"
+  },
+  "allowScripts": {
+    "esbuild@0.27.2": true,
+    "fsevents@2.3.3": true
   }
 }

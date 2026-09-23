@@ -1,0 +1,3877 @@
+[
+  {
+    "name": "DoePhotos: JaneDoe view JohnDoe.jpg -> allow (DoeFamily group)",
+    "request": {
+      "principal": "PhotoApp::User::\"JaneDoe\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"JohnDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "DoeFamily-DoePhotos",
+      "DoePhotos"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "DoePhotos: JohnDoe view JaneDoe.jpg -> allow (DoeFamily group)",
+    "request": {
+      "principal": "PhotoApp::User::\"JohnDoe\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"JaneDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "DoePhotos",
+      "DoeFamily-DoePhotos"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "DoePhotos: JorgeSouza view JaneDoe.jpg -> deny (not in group, not owner)",
+    "request": {
+      "principal": "PhotoApp::User::\"JorgeSouza\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"JaneDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "deny",
+    "reason": [],
+    "num_errors": 0
+  },
+  {
+    "name": "Owner: JaneDoe view own JaneDoe.jpg -> allow",
+    "request": {
+      "principal": "PhotoApp::User::\"JaneDoe\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"JaneDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "DoePhotos",
+      "DoeFamily-DoePhotos",
+      "Photo-owner"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "Owner: JaneDoe edit own JaneDoe.jpg -> allow",
+    "request": {
+      "principal": "PhotoApp::User::\"JaneDoe\"",
+      "action": "PhotoApp::Action::\"editPhoto\"",
+      "resource": "PhotoApp::Photo::\"JaneDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "Photo-owner"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "Owner: JaneDoe delete own JaneDoe.jpg -> allow",
+    "request": {
+      "principal": "PhotoApp::User::\"JaneDoe\"",
+      "action": "PhotoApp::Action::\"deletePhoto\"",
+      "resource": "PhotoApp::Photo::\"JaneDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "Photo-owner"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "Owner: JohnDoe edit JaneDoe.jpg -> deny (only view granted via group)",
+    "request": {
+      "principal": "PhotoApp::User::\"JohnDoe\"",
+      "action": "PhotoApp::Action::\"editPhoto\"",
+      "resource": "PhotoApp::Photo::\"JaneDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "deny",
+    "reason": [],
+    "num_errors": 0
+  },
+  {
+    "name": "Owner: JohnDoe delete JaneDoe.jpg -> deny",
+    "request": {
+      "principal": "PhotoApp::User::\"JohnDoe\"",
+      "action": "PhotoApp::Action::\"deletePhoto\"",
+      "resource": "PhotoApp::Photo::\"JaneDoe.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "deny",
+    "reason": [],
+    "num_errors": 0
+  },
+  {
+    "name": "JaneVacation: JaneDoe view nightclub.jpg -> allow (owner; private forbid exempts owner)",
+    "request": {
+      "principal": "PhotoApp::User::\"JaneDoe\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"nightclub.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "Photo-owner"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "JaneVacation: JohnDoe view nightclub.jpg -> deny (album grant, but private forbid overrides)",
+    "request": {
+      "principal": "PhotoApp::User::\"JohnDoe\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"nightclub.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "deny",
+    "reason": [
+      "Photo-labels-private"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "JaneVacation: JaneDoe view sunset.jpg -> allow (owner)",
+    "request": {
+      "principal": "PhotoApp::User::\"JaneDoe\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"sunset.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "Photo-owner"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "JaneVacation: JohnDoe view sunset.jpg -> allow (JaneVacation album grant)",
+    "request": {
+      "principal": "PhotoApp::User::\"JohnDoe\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"sunset.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "JaneVacation",
+      "JohnDoe-JaneVacation"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "PhotoJudge: JorgeSouza view sunset.jpg in session -> allow (contest label + judgingSession)",
+    "request": {
+      "principal": "PhotoApp::User::\"JorgeSouza\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"sunset.jpg\"",
+      "context": {
+        "judgingSession": true
+      }
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "PhotoJudge"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "PhotoJudge: JorgeSouza view sunset.jpg no session -> deny",
+    "request": {
+      "principal": "PhotoApp::User::\"JorgeSouza\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"sunset.jpg\"",
+      "context": {
+        "judgingSession": false
+      }
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "deny",
+    "reason": [],
+    "num_errors": 0
+  },
+  {
+    "name": "Subjects: JorgeSouza view Judges.jpg -> allow (listed as photo subject)",
+    "request": {
+      "principal": "PhotoApp::User::\"JorgeSouza\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"Judges.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "allow",
+    "reason": [
+      "Photo-subjects"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "Subjects: JorgeSouza view nightclub.jpg -> deny (private, not subject/owner)",
+    "request": {
+      "principal": "PhotoApp::User::\"JorgeSouza\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"nightclub.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "deny",
+    "reason": [
+      "Photo-labels-private"
+    ],
+    "num_errors": 0
+  },
+  {
+    "name": "PhotoJudge: JorgeSouza view sunset.jpg with no context -> deny (judgingSession absent)",
+    "request": {
+      "principal": "PhotoApp::User::\"JorgeSouza\"",
+      "action": "PhotoApp::Action::\"viewPhoto\"",
+      "resource": "PhotoApp::Photo::\"sunset.jpg\"",
+      "context": {}
+    },
+    "entities": [
+      {
+        "uid": {
+          "type": "PhotoApp::Application",
+          "id": "PhotoApp"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JaneDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JohnDoe"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::UserGroup",
+            "id": "DoeFamily"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::User",
+          "id": "JorgeSouza"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Role",
+            "id": "PhotoJudge"
+          }
+        ],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::UserGroup",
+          "id": "DoeFamily"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Role",
+          "id": "PhotoJudge"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JaneDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "JohnDoe.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "DoePhotos"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "sunset.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "contest"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "nightclub.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          },
+          {
+            "type": "PhotoApp::Album",
+            "id": "JaneVacation"
+          }
+        ],
+        "attrs": {
+          "labels": [
+            "private"
+          ],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JaneDoe"
+            }
+          }
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Photo",
+          "id": "Judges.jpg"
+        },
+        "parents": [
+          {
+            "type": "PhotoApp::Application",
+            "id": "PhotoApp"
+          }
+        ],
+        "attrs": {
+          "labels": [],
+          "owner": {
+            "__entity": {
+              "type": "PhotoApp::User",
+              "id": "JohnDoe"
+            }
+          },
+          "subjects": [
+            {
+              "__entity": {
+                "type": "PhotoApp::User",
+                "id": "JorgeSouza"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "DoePhotos"
+        },
+        "parents": [],
+        "attrs": {}
+      },
+      {
+        "uid": {
+          "type": "PhotoApp::Album",
+          "id": "JaneVacation"
+        },
+        "parents": [],
+        "attrs": {}
+      }
+    ],
+    "decision": "deny",
+    "reason": [],
+    "num_errors": 0
+  }
+]

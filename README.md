@@ -6,7 +6,7 @@ This repository contains supporting code samples for SEC402, presented at AWS Su
 
 - [Cedar docs](https://docs.cedarpolicy.com/)
 - [Cedar Playground](https://www.cedarpolicy.com/en/playground)
-- [Cedar CLI](https://crates.io/crates/cedar-policy-cli) (`cargo install cedar-policy-cli@4.4.0`)
+- [Cedar CLI](https://crates.io/crates/cedar-policy-cli) (`cargo install cedar-policy-cli@4.13.0`)
 - [Cedar policy language for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cedar-policy.vscode-cedar)
 
 ## PhotoApp

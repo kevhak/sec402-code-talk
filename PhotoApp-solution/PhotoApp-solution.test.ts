@@ -13,8 +13,8 @@ import { expect, test, beforeAll, suite } from 'vitest';
 import { getCedarStuff } from '../cedar-util';
 
 suite('Cedar WASM', async () => {
-  test('SDK version: 4.4.0', () => {
-    expect(cedar.getCedarVersion()).toBe('4.4.0');
+  test('SDK version: 4.13.0', () => {
+    expect(cedar.getCedarSDKVersion()).toBe('4.13.0');
   });
 });
 
@@ -87,7 +87,7 @@ function expectIsAuthorized(
   action: TypeAndId,
   resource: TypeAndId,
   context: Context = {},
-) {
+): void {
   const answer = cedar.isAuthorized({
     principal: principal,
     action: action,
