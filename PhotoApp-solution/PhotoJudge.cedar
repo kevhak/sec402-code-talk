@@ -1,4 +1,5 @@
 // conditionally allow PhotoJudge to view "contest" Photos
+@id("PhotoJudge")
 permit (
   principal in PhotoApp::Role::"PhotoJudge",
   action == PhotoApp::Action::"viewPhoto",

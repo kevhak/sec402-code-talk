@@ -1,6 +1,7 @@
 // deny access to private Photos from non-owner
+@id("Photo-labels-private")
 forbid (
-  principal,
+  principal is PhotoApp::User,
   action,
   resource in PhotoApp::Application::"PhotoApp"
 )

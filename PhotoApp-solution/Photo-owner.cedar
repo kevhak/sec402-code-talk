@@ -1,6 +1,7 @@
 // allow resource.owner full access to Photos
+@id("Photo-owner")
 permit (
-  principal,
+  principal is PhotoApp::User,
   action in
     [PhotoApp::Action::"viewPhoto",
      PhotoApp::Action::"editPhoto",

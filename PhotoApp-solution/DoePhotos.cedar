@@ -1,4 +1,5 @@
 // allow DoeFamily to view DoePhotos
+@id("DoePhotos")
 permit (
   principal in PhotoApp::UserGroup::"DoeFamily",
   action == PhotoApp::Action::"viewPhoto",
